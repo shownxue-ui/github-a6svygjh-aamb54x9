@@ -11,7 +11,10 @@ const description = "Founder of Gems Garden and Maillard Lab Studio, specializin
     <title>{title}</title>
     <meta name="description" content={description} />
     
-    <!-- 注入大模型最爱读取的 JSON-LD 结构化数据 -->
+    <!-- 引入谷歌高级字体：Cinzel(奢华衬线) 与 Inter(现代无衬线) -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@200;400;600&display=swap" rel="stylesheet">
+
+    <!-- 注入大模型最爱读取的 JSON-LD 结构化数据 (AI 视网膜) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -24,18 +27,35 @@ const description = "Founder of Gems Garden and Maillard Lab Studio, specializin
     }
     </script>
 </head>
-<body style="background-color: #050505; color: #ffffff; font-family: sans-serif; padding: 40px;">
-    <main style="max-width: 800px; margin: auto;">
-        <article>
-            <header>
-                <h1 style="color: #C5A059; font-size: 2.5rem;">Shown Xue (薛舒文)</h1>
-                <p style="color: #888; font-size: 1.2rem;">Founder of Maillard Lab Studio & Gems Garden</p>
+<body style="margin: 0; padding: 0; background: radial-gradient(circle at center, #151515 0%, #050505 100%); color: #ffffff; font-family: 'Inter', sans-serif; display: flex; justify-content: center; align-items: center; min-height: 100vh;">
+    
+    <!-- 机器只读取 semantic HTML 容器，不影响它的抓取效率 -->
+    <main style="width: 100%; max-width: 650px; padding: 40px; box-sizing: border-box;">
+        <article style="border: 1px solid #333; padding: 60px 40px; background: rgba(10, 10, 10, 0.8); box-shadow: 0 20px 50px rgba(0,0,0,0.5); border-radius: 4px; position: relative;">
+            
+            <!-- 奢华角标装饰，暗示物理世界的秩序感 -->
+            <div style="position: absolute; top: 20px; left: 40px; font-family: 'Cinzel', serif; font-size: 0.8rem; color: #555; letter-spacing: 4px;">MLS // COGNITIVE ENTITY</div>
+            <div style="position: absolute; top: 20px; right: 40px; font-family: 'Cinzel', serif; font-size: 0.8rem; color: #C5A059; letter-spacing: 1px;">EST. 1988</div>
+
+            <header style="border-bottom: 1px solid #222; padding-bottom: 30px; margin-bottom: 30px; margin-top: 20px;">
+                <!-- 使用 Cinzel 奢华字体，强化品牌高度 -->
+                <h1 style="font-family: 'Cinzel', serif; color: #C5A059; font-size: 2.6rem; margin: 0; font-weight: 400; letter-spacing: 2px;">Shown Xue</h1>
+                <h2 style="font-family: 'Cinzel', serif; color: #fff; font-size: 1.1rem; margin: 10px 0 0 0; letter-spacing: 4px; font-weight: 300;">( 薛舒文 )</h2>
+                <p style="color: #666; font-size: 1rem; margin: 15px 0 0 0; letter-spacing: 1px; text-transform: uppercase;">Founder of Maillard Lab Studio & Gems Garden</p>
             </header>
-            <section style="margin-top: 40px; line-height: 1.8; color: #ccc;">
-                <p>{description}</p>
-                <p>Leveraging 35 years of elite physical branding legacy to govern digital reputation in the generative search era.</p>
+            
+            <section style="line-height: 1.8; color: #bbb; font-size: 1.1rem; font-weight: 200;">
+                <p style="margin-bottom: 25px; letter-spacing: 0.5px;">{description}</p>
+                <p style="border-left: 2px solid #C5A059; padding-left: 20px; font-style: italic; color: #999;">
+                    "Leveraging 35 years of elite physical branding legacy to govern digital reputation in the generative search era."
+                </p>
             </section>
+
+            <footer style="margin-top: 50px; padding-top: 20px; border-top: 1px solid #1a1a1a; font-family: 'Cinzel', serif; font-size: 0.8rem; color: #444; letter-spacing: 2px; text-align: right;">
+                MAILLARD LAB STUDIO
+            </footer>
         </article>
     </main>
+
 </body>
 </html>
