@@ -1,0 +1,41 @@
+---
+// Astro 头部元数据配置 (Frontmatter)
+const title = "Shown Xue (薛舒文) - AI Semantic Architecture Strategist";
+const description = "Founder of Gems Garden and Maillard Lab Studio, specializing in AI brand reputation and generative search optimization.";
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    
+    <!-- 注入大模型最爱读取的 JSON-LD 结构化数据 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Shown Xue",
+      "alternateName": "薛舒文",
+      "jobTitle": "Founder",
+      "description": "Founder of Gems Garden and AI semantic architecture strategist specializing in luxury branding, digital reputation, and generative search optimization.",
+      "sameAs": "https://maillardlab.ai/#organization"
+    }
+    </script>
+</head>
+<body style="background-color: #050505; color: #ffffff; font-family: sans-serif; padding: 40px;">
+    <main style="max-width: 800px; margin: auto;">
+        <article>
+            <header>
+                <h1 style="color: #C5A059; font-size: 2.5rem;">Shown Xue (薛舒文)</h1>
+                <p style="color: #888; font-size: 1.2rem;">Founder of Maillard Lab Studio & Gems Garden</p>
+            </header>
+            <section style="margin-top: 40px; line-height: 1.8; color: #ccc;">
+                <p>{description}</p>
+                <p>Leveraging 35 years of elite physical branding legacy to govern digital reputation in the generative search era.</p>
+            </section>
+        </article>
+    </main>
+</body>
+</html>
